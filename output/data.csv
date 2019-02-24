@@ -1,0 +1,9 @@
+Name, Relationship, Vital Status, Disease(s), Disease onset, Death age
+Charles, Maternal Cousin, true, Diabetes: Type 2, 44, null
+Sarah, Maternal Cousin, true, Diabetes: Type 1, 2, null
+John, Maternal Uncle, false, Cancer: Bone Cancer, 58, 32
+Sherry, Maternal Aunt, true, Hypertension, 70, null
+Caroline, Maternal Grandfather, false, Heart Disease: Aortic Dissection, 49, 51
+Fred, Maternal Grandfather, true, Cancer: Thyroid, 59, null
+Sally, Mother, true, null, null, null
+George, Self, true, null, null, null

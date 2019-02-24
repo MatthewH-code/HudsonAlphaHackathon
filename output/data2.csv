@@ -1,0 +1,9 @@
+Name, Relationship, Vital Status, Disease(s), Disease onset, Death age
+,3rd Degree Relative, Alive, Diabetes: Type 2, 44,
+,3rd Degree Relative, Alive, Diabetes: Type 1, 2-3,
+,2st Degree Relative, Passed, Cancer: Bone Cancer, 58, 32
+,2st Degree Relative, Alive, Hypertension, 59-70,
+,2st Degree Relative, Passed, Heart Disease: Aortic Dissection, 49-51, 51-53
+,2st Degree Relative, Alive, Cancer: Thyroid, 59-60,
+,1st Degree Relative, Alive,, 44,
+George,, Alive,, 44
