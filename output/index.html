@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <style>
             table {
-                border-collapse: collapse;
-                border: 2px black solid;
-                font: 12px sans-serif;
-            }
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+}
+.container {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+}
+.one {
+    width: 43%;
+    float: left;
+}
+.two {
+    margin-left: 43%;
+}
+
 
             td {
                 border: 1px black solid;
@@ -15,13 +31,20 @@
             }
         </style>
     </head>
-    <body>
-        <script src="http://d3js.org/d3.v3.min.js"></script>
-        <script type="text/javascript"charset="utf-8">
+<title>Medical History</title>
+<body>
+
+  <h1>Medical History</h1>
+
+  <div class="container">
+  <div class="one">
+  <h2>Records submitted/requested by patient</h2>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript"charset="utf-8">
             d3.text("data.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
-                var container = d3.select("body")
+                var container = d3.select(".one")
                     .append("table")
 
                     .selectAll("tr")
@@ -34,11 +57,15 @@
                         .text(function(d) { return d; });
             });
 			</script>
-			<script type="text/javascript"charset="utf-8">
+  </div>
+<div class="two">
+<h2>Records of patient requested by Physician</h2>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript"charset="utf-8">
 			d3.text("data2.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
-                var container = d3.select("body")
+                var container = d3.select(".two")
                     .append("table")
 
                     .selectAll("tr")
@@ -51,5 +78,7 @@
                         .text(function(d) { return d; });
             });
         </script>
-    </body>
-</html>
+  </div>
+  </div>
+
+</body>
